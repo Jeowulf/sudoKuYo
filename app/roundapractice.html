@@ -1,0 +1,269 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>sudokuYo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <link rel="stylesheet" href="sudokuGen.css">
+  </head>
+  <body>
+    <div class="container" style="position: fixed; top: 40px; left: 340px">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Score</a></li>
+          <li><a href="#">Timer</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="text-muted">sudokuYo</h3>
+      </div>
+      <div class="jumbotron" style="height: 500px">
+        <!-- table#bigBox>.row.big$*3>.col.big$*3>table#smallBox$>.row.small$*3>.col.small$*3 -->
+  <table id="bigBox">
+    <tr class="row big1">
+      <td class="col big1">
+        <table id="smallBox1">
+          <tr class="row small1">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small2">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small3">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+        </table>
+      </td>
+      <td class="col big2">
+        <table id="smallBox2">
+          <tr class="row small1">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small2">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small3">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+        </table>
+      </td>
+      <td class="col big3">
+        <table id="smallBox3">
+          <tr class="row small1">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small2">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small3">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr class="row big2">
+      <td class="col big1">
+        <table id="smallBox1">
+          <tr class="row small1">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small2">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small3">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+        </table>
+      </td>
+      <td class="col big2">
+        <table id="smallBox2">
+          <tr class="row small1">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small2">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small3">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+        </table>
+      </td>
+      <td class="col big3">
+        <table id="smallBox3">
+          <tr class="row small1">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small2">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small3">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr class="row big3">
+      <td class="col big1">
+        <table id="smallBox1">
+          <tr class="row small1">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small2">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small3">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+        </table>
+      </td>
+      <td class="col big2">
+        <table id="smallBox2">
+          <tr class="row small1">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small2">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small3">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+        </table>
+      </td>
+      <td class="col big3">
+        <table id="smallBox3">
+          <tr class="row small1">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small2">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+          <tr class="row small3">
+            <td class="col small1"></td>
+            <td class="col small2"></td>
+            <td class="col small3"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+        <p><a class="btn btn-lg btn-success" style="position: relative; top: 50px" href="#">Pop a Sud <span class="glyphicon glyphicon-ok"></span></a></p>
+        <p><a class="btn btn-lg btn-success" style="float: left" href="#">Prev Sud <span class="glyphicon glyphicon-chevron-left"></span></a></p>
+        <p><a class="btn btn-lg btn-success" style="float: right"s href="#">Nex Sud <span class="glyphicon glyphicon-chevron-right"></span></a></p>
+
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4></h4>
+          <p></p>
+          <h4></h4>
+          <p></p>
+
+          <h4></h4>
+          <p></p>
+
+        </div>
+      </div>
+
+      <div class="footer">
+        <p><span></span></p>
+      </div>
+
+    </div>
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+    <script src="roundabout-master/jquery.roundabout.min.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

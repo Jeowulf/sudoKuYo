@@ -1,0 +1,164 @@
+body {
+  padding: 200px;
+}
+h3 {
+   color: cyan;
+   -webkit-text-fill-color: yellow; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color:magenta;
+   font-size: 50px;
+}
+#bigBox {
+  border: 1px bold magenta;
+}
+table {
+  margin:1em auto;
+}
+td.col {
+  border: 1px solid magenta;
+}
+tr.row {
+  border: 1px solid magenta;
+}
+td {
+  height:30px !important;
+  width:30px !important;
+  border: 1px solid magenta;
+  text-align:center;
+}
+td:first-child {
+  border-left: 1px solid magenta;
+}
+td:nth-child(3n) {
+  border-right: 1px solid magenta ;
+}
+tr:first-child {
+  border-top: 1px solid magenta;
+}
+tr:nth-child(3n) td {
+  border-bottom: 1px solid magenta;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: center;
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    padding: 0;
+    margin: 0 auto;
+    border: 1px solid magenta;
+}
+
+table, td, th {
+    border: 1px solid magenta;
+    padding: 0px !important;
+    font-size: 22px;
+
+    font-weight: bold;
+    color: cyan;
+    -webkit-text-fill-color: magenta; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:cyan !important;
+
+}
+input[type=text] {
+      font-size: 22px;
+      font-weight: bold;
+      color: cyan;
+      -webkit-text-fill-color: magenta; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color:cyan !important;
+      maxlength: 1;
+      padding: none;
+      margin: 0px;
+      width: 30px;
+      height: 30px;
+      background-color: yellow;
+      border: none;
+      text-align: center;
+      vertical-align: center;
+    }
+
+.slider {
+  position: relative;
+  top: 150px;
+}
+.table tbody tr:nth-child(1) td:nth-child(5) {
+   /* Styles goes here */
+}
+ul {
+  list-style: none;
+}
+
+.buttons {
+  position:relative;
+  top: 380px;
+  background-size: 0px;
+  background: Transparent;
+  border: none !important;
+  outline:none !important;
+  background-color: rgba(255, 255, 255, .99);
+}
+#dogwood {
+  color: cyan;
+   -webkit-text-fill-color: yellow; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1.5px;
+   -webkit-text-stroke-color:magenta !important;
+   font-size: 33px;
+
+}
+#chevron {
+  position: relative;
+  bottom: 450px;
+  z-index: 500;
+  background-size: 0px;
+  background: Transparent;
+  border: none;
+  overflow:hidden;
+  outline:none;
+  font-size: 30px;
+  color: cyan;
+  color: cyan;
+   -webkit-text-fill-color: cyan; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color:magenta !important;
+   font-size: 30px;
+}
+.btn:focus {
+  color: cyan;
+  background: transparent;
+  border-color: magenta;
+
+}
+.btn:active {
+  color: cyan;
+  background: transparent;
+  border-color: magenta;
+}
+.btn.active {
+  color: cyan;
+  background: magenta;
+  border-color: magenta;
+}
+.btn {
+  font-weight: bold;
+  font-size: 30px;
+  color: cyan;
+  background: transparent;
+  border-color: magenta;
+  border-width: 3px;
+}
+.btn:hover {
+  background-color: magenta;
+  border: magenta;
+  outline:magenta;
+  background-color: cyan);
+}
+.btn:click {
+  background-size: 0px;
+  border-color: magenta;
+  outline: magenta;
+  background-color: cyan;
+}
