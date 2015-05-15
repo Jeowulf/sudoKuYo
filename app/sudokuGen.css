@@ -84,6 +84,7 @@ input[type=text] {
 .slider {
   position: relative;
   top: 150px;
+  z-index: 501;
 }
 .table tbody tr:nth-child(1) td:nth-child(5) {
    /* Styles goes here */
@@ -96,7 +97,7 @@ ul {
   position:relative;
   top: 380px;
   background-size: 0px;
-  background: Transparent;
+  background: Transparent !important;
   border: none !important;
   outline:none !important;
   background-color: rgba(255, 255, 255, .99);
