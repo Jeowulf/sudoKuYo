@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=.5">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0c, maximum-scale=1.0, minimum-scale=.5">
     <title style="color: cyan; text-outline:magenta">sudokuYo</title>
     <meta name="description" content="">
     <!-- <meta name="viewport" content="width=device-width"> -->
@@ -24,8 +24,7 @@
     <div class="container" style="position: fixed; top: 100px; left: 485px">
       <div class="header" style="">
         <ol class="nav nav-pills pull-right">
-          <li class="scorecard animated bounceInRight"><a href="#" id="dogwood">Score:</a></li>
-          <li class="scorecard animated bounceInRight"><a href="#" id="dogwood">0</a></li>
+          <li class="scorecard animated bounceInRight"><a href="#" id="dogwood1">Timer Here</a></li>
         </ol>
         <h3 class="title animated bounceInDown">sudoKuYo</h3>
       </div>
@@ -38,57 +37,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="1"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="2"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="3"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="1"><input type="text" id="c1" maxlength="1"></td>
+                    <td class="col small2" id="2"><input type="text" id="c2" maxlength="1"></td>
+                    <td class="col small3" id="3"><input type="text" id="c3" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="10"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="11"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="12"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="10"><input type="text"  id="c10" maxlength="1"></td>
+                    <td class="col small2" id="11"><input type="text"  id="c11" maxlength="1"></td>
+                    <td class="col small3" id="12"><input type="text"  id="c12" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="19"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="20"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="21"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="19"><input type="text"  id="c19" maxlength="1"></td>
+                    <td class="col small2" id="20"><input type="text"  id="c20" maxlength="1"></td>
+                    <td class="col small3" id="21"><input type="text"  id="c21" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="4"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="5"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="6"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="4"><input type="text"  id="c4" maxlength="1"></td>
+                    <td class="col small2" id="5"><input type="text"  id="c5" maxlength="1"></td>
+                    <td class="col small3" id="6"><input type="text"  id="c6" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="13"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="14"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="15"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="13"><input type="text"  id="c13" maxlength="1"></td>
+                    <td class="col small2" id="14"><input type="text"  id="c14" maxlength="1"></td>
+                    <td class="col small3" id="15"><input type="text"  id="c15" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="22"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="23"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="24"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="22"><input type="text"  id="c22" maxlength="1"></td>
+                    <td class="col small2" id="23"><input type="text"  id="c23" maxlength="1"></td>
+                    <td class="col small3" id="24"><input type="text"  id="c24" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="7"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="8"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="9"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="7"><input type="text"  id="c7" maxlength="1"></td>
+                    <td class="col small2" id="8"><input type="text"  id="c8" maxlength="1"></td>
+                    <td class="col small3" id="9"><input type="text"  id="c9" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="16"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="17"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="18"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="16"><input type="text"  id="c16" maxlength="1"></td>
+                    <td class="col small2" id="17"><input type="text"  id="c17" maxlength="1"></td>
+                    <td class="col small3" id="18"><input type="text"  id="c18" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="25"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="26"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="27"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="25"><input type="text"  id="c25" maxlength="1"></td>
+                    <td class="col small2" id="26"><input type="text"  id="c26" maxlength="1"></td>
+                    <td class="col small3" id="27"><input type="text"  id="c27" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -97,57 +96,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="28"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="29"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="30"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="28"><input type="text"  id="c28" maxlength="1"></td>
+                    <td class="col small2" id="29"><input type="text"  id="c29" maxlength="1"></td>
+                    <td class="col small3" id="30"><input type="text"  id="c30" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="37"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="38"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="39"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="37"><input type="text"  id="c37" maxlength="1"></td>
+                    <td class="col small2" id="38"><input type="text"  id="c38" maxlength="1"></td>
+                    <td class="col small3" id="39"><input type="text"  id="c39" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="46"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="47"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="48"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="46"><input type="text"  id="c46" maxlength="1"></td>
+                    <td class="col small2" id="47"><input type="text"  id="c47" maxlength="1"></td>
+                    <td class="col small3" id="48"><input type="text"  id="c48" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="31"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="32"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="33"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="31"><input type="text"  id="c31" maxlength="1"></td>
+                    <td class="col small2" id="32"><input type="text"  id="c32" maxlength="1"></td>
+                    <td class="col small3" id="33"><input type="text"  id="c33" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="40"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="41"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="42"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="40"><input type="text"  id="c40" maxlength="1"></td>
+                    <td class="col small2" id="41"><input type="text"  id="c41" maxlength="1"></td>
+                    <td class="col small3" id="42"><input type="text"  id="c42" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="49"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="50"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="51"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="49"><input type="text"  id="c49" maxlength="1"></td>
+                    <td class="col small2" id="50"><input type="text"  id="c50" maxlength="1"></td>
+                    <td class="col small3" id="51"><input type="text"  id="c51" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="34"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="35"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="36"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="34"><input type="text"  id="c34" maxlength="1"></td>
+                    <td class="col small2" id="35"><input type="text"  id="c35" maxlength="1"></td>
+                    <td class="col small3" id="36"><input type="text"  id="c36" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="43"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="44"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="45"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="43"><input type="text"  id="c43" maxlength="1"></td>
+                    <td class="col small2" id="44"><input type="text"  id="c44" maxlength="1"></td>
+                    <td class="col small3" id="45"><input type="text"  id="c45" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="52"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="53"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="54"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="52"><input type="text"  id="c52" maxlength="1"></td>
+                    <td class="col small2" id="53"><input type="text"  id="c53" maxlength="1"></td>
+                    <td class="col small3" id="54"><input type="text"  id="c54" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -156,57 +155,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="55"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="56"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="57"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="55"><input type="text"  id="c55" maxlength="1"></td>
+                    <td class="col small2" id="56"><input type="text"  id="c56" maxlength="1"></td>
+                    <td class="col small3" id="57"><input type="text"  id="c57" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="64"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="65"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="66"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="64"><input type="text"  id="c64" maxlength="1"></td>
+                    <td class="col small2" id="65"><input type="text"  id="c65" maxlength="1"></td>
+                    <td class="col small3" id="66"><input type="text"  id="c66" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="73"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="74"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="75"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="73"><input type="text"  id="c73" maxlength="1"></td>
+                    <td class="col small2" id="74"><input type="text"  id="c74" maxlength="1"></td>
+                    <td class="col small3" id="75"><input type="text"  id="c75" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="58"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="59"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="60"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="58"><input type="text"  id="c58" maxlength="1"></td>
+                    <td class="col small2" id="59"><input type="text"  id="c59" maxlength="1"></td>
+                    <td class="col small3" id="60"><input type="text"  id="c60" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="67"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="68"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="69"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="67"><input type="text"  id="c67" maxlength="1"></td>
+                    <td class="col small2" id="68"><input type="text"  id="c68" maxlength="1"></td>
+                    <td class="col small3" id="69"><input type="text"  id="c69" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="76"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="77"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="78"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="76"><input type="text"  id="c76" maxlength="1"></td>
+                    <td class="col small2" id="77"><input type="text"  id="c77" maxlength="1"></td>
+                    <td class="col small3" id="78"><input type="text"  id="c78" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="61"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="62"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="63"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="61"><input type="text"  id="c61" maxlength="1"></td>
+                    <td class="col small2" id="62"><input type="text"  id="c62" maxlength="1"></td>
+                    <td class="col small3" id="63"><input type="text"  id="c63" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="70"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="71"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="72"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="70"><input type="text"  id="c70" maxlength="1"></td>
+                    <td class="col small2" id="71"><input type="text"  id="c71" maxlength="1"></td>
+                    <td class="col small3" id="72"><input type="text"  id="c72" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="79"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="80"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="81"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="79"><input type="text"  id="c79" maxlength="1"></td>
+                    <td class="col small2" id="80"><input type="text"  id="c80" maxlength="1"></td>
+                    <td class="col small3" id="81"><input type="text"  id="c81" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -220,57 +219,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="82"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="83"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="84"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="82"><input type="text"  id="c82" maxlength="1"></td>
+                    <td class="col small2" id="83"><input type="text"  id="c83" maxlength="1"></td>
+                    <td class="col small3" id="84"><input type="text"  id="c84" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="91"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="92"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="93"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="91"><input type="text"  id="c91" maxlength="1"></td>
+                    <td class="col small2" id="92"><input type="text"  id="c92" maxlength="1"></td>
+                    <td class="col small3" id="93"><input type="text"  id="c93" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="100"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="101"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="102"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="100"><input type="text"  id="c100" maxlength="1"></td>
+                    <td class="col small2" id="101"><input type="text"  id="c101" maxlength="1"></td>
+                    <td class="col small3" id="102"><input type="text"  id="c102" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="85"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="86"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="87"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="85"><input type="text"  id="c85" maxlength="1"></td>
+                    <td class="col small2" id="86"><input type="text"  id="c86" maxlength="1"></td>
+                    <td class="col small3" id="87"><input type="text"  id="c87" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="94"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="95"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="96"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="94"><input type="text"  id="c94" maxlength="1"></td>
+                    <td class="col small2" id="95"><input type="text"  id="c95" maxlength="1"></td>
+                    <td class="col small3" id="96"><input type="text"  id="c96" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="103"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="104"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="105"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="103"><input type="text"  id="c103" maxlength="1"></td>
+                    <td class="col small2" id="104"><input type="text"  id="c104" maxlength="1"></td>
+                    <td class="col small3" id="105"><input type="text"  id="c105" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="88"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="89"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="90"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="88"><input type="text"  id="c88" maxlength="1"></td>
+                    <td class="col small2" id="89"><input type="text"  id="c89" maxlength="1"></td>
+                    <td class="col small3" id="90"><input type="text"  id="c90" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="97"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="98"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="99"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="97"><input type="text"  id="c97" maxlength="1"></td>
+                    <td class="col small2" id="98"><input type="text"  id="c98" maxlength="1"></td>
+                    <td class="col small3" id="99"><input type="text"  id="c99" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="106"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="107"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="108"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="106"><input type="text"  id="c106" maxlength="1"></td>
+                    <td class="col small2" id="107"><input type="text"  id="c107" maxlength="1"></td>
+                    <td class="col small3" id="108"><input type="text"  id="c108" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -279,57 +278,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="109"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="110"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="111"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="109"><input type="text"  id="c109" maxlength="1"></td>
+                    <td class="col small2" id="110"><input type="text"  id="c110" maxlength="1"></td>
+                    <td class="col small3" id="111"><input type="text"  id="c111" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="118"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="119"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="120"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="118"><input type="text"  id="c118" maxlength="1"></td>
+                    <td class="col small2" id="119"><input type="text"  id="c119" maxlength="1"></td>
+                    <td class="col small3" id="120"><input type="text"  id="c120" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="127"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="128"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="129"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="127"><input type="text"  id="c127" maxlength="1"></td>
+                    <td class="col small2" id="128"><input type="text"  id="c128" maxlength="1"></td>
+                    <td class="col small3" id="129"><input type="text"  id="c129" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="112"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="113"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="114"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="112"><input type="text"  id="c130" maxlength="1"></td>
+                    <td class="col small2" id="113"><input type="text"  id="c131" maxlength="1"></td>
+                    <td class="col small3" id="114"><input type="text"  id="c132" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="121"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="122"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="123"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="121"><input type="text"  id="c121" maxlength="1"></td>
+                    <td class="col small2" id="122"><input type="text"  id="c122" maxlength="1"></td>
+                    <td class="col small3" id="123"><input type="text"  id="c123" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="130"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="131"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="132"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="130"><input type="text"  id="c130" maxlength="1"></td>
+                    <td class="col small2" id="131"><input type="text"  id="c131" maxlength="1"></td>
+                    <td class="col small3" id="132"><input type="text"  id="c132" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="115"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="116"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="117"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="115"><input type="text"  id="c115" maxlength="1"></td>
+                    <td class="col small2" id="116"><input type="text"  id="c116" maxlength="1"></td>
+                    <td class="col small3" id="117"><input type="text"  id="c117" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="124"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="125"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="126"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="124"><input type="text"  id="c124" maxlength="1"></td>
+                    <td class="col small2" id="125"><input type="text"  id="c125" maxlength="1"></td>
+                    <td class="col small3" id="126"><input type="text"  id="c126" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="133"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="134"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="135"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="133"><input type="text"  id="c133" maxlength="1"></td>
+                    <td class="col small2" id="134"><input type="text"  id="c134" maxlength="1"></td>
+                    <td class="col small3" id="135"><input type="text"  id="c135" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -338,57 +337,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="136"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="137"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="138"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="136"><input type="text"  id="c136" maxlength="1"></td>
+                    <td class="col small2" id="137"><input type="text"  id="c137" maxlength="1"></td>
+                    <td class="col small3" id="138"><input type="text"  id="c138" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="145"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="146"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="147"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="145"><input type="text"  id="c145" maxlength="1"></td>
+                    <td class="col small2" id="146"><input type="text"  id="c146" maxlength="1"></td>
+                    <td class="col small3" id="147"><input type="text"  id="c147" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="154"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="155"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="156"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="154"><input type="text"  id="c154" maxlength="1"></td>
+                    <td class="col small2" id="155"><input type="text"  id="c155" maxlength="1"></td>
+                    <td class="col small3" id="156"><input type="text"  id="c156" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="139"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="140"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="141"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="139"><input type="text"  id="c139" maxlength="1"></td>
+                    <td class="col small2" id="140"><input type="text"  id="c140" maxlength="1"></td>
+                    <td class="col small3" id="141"><input type="text"  id="c141" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="148"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="149"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="150"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="148"><input type="text"  id="c148" maxlength="1"></td>
+                    <td class="col small2" id="149"><input type="text"  id="c149" maxlength="1"></td>
+                    <td class="col small3" id="150"><input type="text"  id="c150" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="157"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="158"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="159"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="157"><input type="text"  id="c157" maxlength="1"></td>
+                    <td class="col small2" id="158"><input type="text"  id="c158" maxlength="1"></td>
+                    <td class="col small3" id="159"><input type="text"  id="c159" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="142"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="143"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="144"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="142"><input type="text"  id="c142" maxlength="1"></td>
+                    <td class="col small2" id="143"><input type="text"  id="c143" maxlength="1"></td>
+                    <td class="col small3" id="144"><input type="text"  id="c144" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="151"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="152"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="153"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="151"><input type="text"  id="c151" maxlength="1"></td>
+                    <td class="col small2" id="152"><input type="text"  id="c152" maxlength="1"></td>
+                    <td class="col small3" id="153"><input type="text"  id="c153" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="160"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="161"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="162"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="160"><input type="text"  id="c160" maxlength="1"></td>
+                    <td class="col small2" id="161"><input type="text"  id="c161" maxlength="1"></td>
+                    <td class="col small3" id="162"><input type="text"  id="c162" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -402,57 +401,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="163"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="164"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="165"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="163"><input type="text"  id="c163" maxlength="1"></td>
+                    <td class="col small2" id="164"><input type="text"  id="c164" maxlength="1"></td>
+                    <td class="col small3" id="165"><input type="text"  id="c165" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="172"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="173"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="174"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="172"><input type="text"  id="c172" maxlength="1"></td>
+                    <td class="col small2" id="173"><input type="text"  id="c173" maxlength="1"></td>
+                    <td class="col small3" id="174"><input type="text"  id="c174" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="181"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="182"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="183"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="181"><input type="text"  id="c181" maxlength="1"></td>
+                    <td class="col small2" id="182"><input type="text"  id="c182" maxlength="1"></td>
+                    <td class="col small3" id="183"><input type="text"  id="c183" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="166"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="167"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="168"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="166"><input type="text"  id="c166" maxlength="1"></td>
+                    <td class="col small2" id="167"><input type="text"  id="c167" maxlength="1"></td>
+                    <td class="col small3" id="168"><input type="text"  id="c168" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="175"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="176"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="177"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="175"><input type="text"  id="c175" maxlength="1"></td>
+                    <td class="col small2" id="176"><input type="text"  id="c176" maxlength="1"></td>
+                    <td class="col small3" id="177"><input type="text"  id="c177" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="184"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="185"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="186"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="184"><input type="text"  id="c184" maxlength="1"></td>
+                    <td class="col small2" id="185"><input type="text"  id="c185" maxlength="1"></td>
+                    <td class="col small3" id="186"><input type="text"  id="c186" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="169"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="170"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="171"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="169"><input type="text"  id="c169" maxlength="1"></td>
+                    <td class="col small2" id="170"><input type="text"  id="c170" maxlength="1"></td>
+                    <td class="col small3" id="171"><input type="text"  id="c171" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="178"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="179"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="180"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="178"><input type="text"  id="c178" maxlength="1"></td>
+                    <td class="col small2" id="179"><input type="text"  id="c179" maxlength="1"></td>
+                    <td class="col small3" id="180"><input type="text"  id="c180" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="187"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="188"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="189"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="187"><input type="text"  id="c187" maxlength="1"></td>
+                    <td class="col small2" id="188"><input type="text"  id="c188" maxlength="1"></td>
+                    <td class="col small3" id="189"><input type="text"  id="c189" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -461,57 +460,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="190"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="191"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="192"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="190"><input type="text"  id="c190" maxlength="1"></td>
+                    <td class="col small2" id="191"><input type="text"  id="c191" maxlength="1"></td>
+                    <td class="col small3" id="192"><input type="text"  id="c192" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="199"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="200"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="201"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="199"><input type="text"  id="c199" maxlength="1"></td>
+                    <td class="col small2" id="200"><input type="text"  id="c200" maxlength="1"></td>
+                    <td class="col small3" id="201"><input type="text"  id="c201" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="208"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="209"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="210"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="208"><input type="text"  id="c208" maxlength="1"></td>
+                    <td class="col small2" id="209"><input type="text"  id="c209" maxlength="1"></td>
+                    <td class="col small3" id="210"><input type="text"  id="c210" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="193"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="194"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="195"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="193"><input type="text"  id="c193" maxlength="1"></td>
+                    <td class="col small2" id="194"><input type="text"  id="c194" maxlength="1"></td>
+                    <td class="col small3" id="195"><input type="text"  id="c195" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="202"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="203"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="204"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="202"><input type="text"  id="c202" maxlength="1"></td>
+                    <td class="col small2" id="203"><input type="text"  id="c203" maxlength="1"></td>
+                    <td class="col small3" id="204"><input type="text"  id="c204" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="211"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="212"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="213"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="211"><input type="text"  id="c211" maxlength="1"></td>
+                    <td class="col small2" id="212"><input type="text"  id="c212" maxlength="1"></td>
+                    <td class="col small3" id="213"><input type="text"  id="c213" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="196"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="197"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="198"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="196"><input type="text"  id="c196" maxlength="1"></td>
+                    <td class="col small2" id="197"><input type="text"  id="c197" maxlength="1"></td>
+                    <td class="col small3" id="198"><input type="text"  id="c198" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="205"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="206"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="207"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="205"><input type="text"  id="c205" maxlength="1"></td>
+                    <td class="col small2" id="206"><input type="text"  id="c206" maxlength="1"></td>
+                    <td class="col small3" id="207"><input type="text"  id="c207" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="214"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="215"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="216"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="214"><input type="text"  id="c214" maxlength="1"></td>
+                    <td class="col small2" id="215"><input type="text"  id="c215" maxlength="1"></td>
+                    <td class="col small3" id="216"><input type="text"  id="c216" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -520,57 +519,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="217"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="218"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="219"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="217"><input type="text"  id="c217" maxlength="1"></td>
+                    <td class="col small2" id="218"><input type="text"  id="c218" maxlength="1"></td>
+                    <td class="col small3" id="219"><input type="text"  id="c219" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="226"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="227"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="228"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="226"><input type="text"  id="c226" maxlength="1"></td>
+                    <td class="col small2" id="227"><input type="text"  id="c227" maxlength="1"></td>
+                    <td class="col small3" id="228"><input type="text"  id="c228" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="235"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="236"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="237"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="235"><input type="text"  id="c235" maxlength="1"></td>
+                    <td class="col small2" id="236"><input type="text"  id="c236" maxlength="1"></td>
+                    <td class="col small3" id="237"><input type="text"  id="c237" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="220"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="221"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="222"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="220"><input type="text"  id="c220" maxlength="1"></td>
+                    <td class="col small2" id="221"><input type="text"  id="c221" maxlength="1"></td>
+                    <td class="col small3" id="222"><input type="text"  id="c222" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="229"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="230"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="231"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="229"><input type="text"  id="c229" maxlength="1"></td>
+                    <td class="col small2" id="230"><input type="text"  id="c230" maxlength="1"></td>
+                    <td class="col small3" id="231"><input type="text"  id="c231" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="238"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="239"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="240"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="238"><input type="text"  id="c238" maxlength="1"></td>
+                    <td class="col small2" id="239"><input type="text"  id="c239" maxlength="1"></td>
+                    <td class="col small3" id="240"><input type="text"  id="c240" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="223"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="224"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="225"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="223"><input type="text"  id="c223" maxlength="1"></td>
+                    <td class="col small2" id="224"><input type="text"  id="c224" maxlength="1"></td>
+                    <td class="col small3" id="225"><input type="text"  id="c225" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="232"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="233"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="234"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="232"><input type="text"  id="c232" maxlength="1"></td>
+                    <td class="col small2" id="233"><input type="text"  id="c233" maxlength="1"></td>
+                    <td class="col small3" id="234"><input type="text"  id="c234" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="241"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="242"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="243"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="241"><input type="text"  id="c241" maxlength="1"></td>
+                    <td class="col small2" id="242"><input type="text"  id="c242" maxlength="1"></td>
+                    <td class="col small3" id="243"><input type="text"  id="c243" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -584,57 +583,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="244"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="245"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="246"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="244"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="245"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="246"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="253"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="254"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="255"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="253"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="254"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="255"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="262"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="263"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="264"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="262"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="263"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="264"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="247"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="248"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="249"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="247"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="248"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="249"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="256"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="257"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="258"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="256"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="257"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="258"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="265"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="266"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="267"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="265"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="266"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="267"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="250"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="251"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="252"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="250"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="251"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="252"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="259"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="260"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="261"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="259"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="260"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="261"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="268"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="269"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="270"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="268"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="269"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="270"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -643,57 +642,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="271"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="272"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="273"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="271"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="272"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="273"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="280"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="281"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="282"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="280"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="281"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="282"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="289"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="290"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="291"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="289"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="290"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="291"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="274"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="275"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="276"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="274"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="275"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="276"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="283"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="284"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="285"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="283"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="284"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="285"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="292"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="293"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="294"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="292"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="293"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="294"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="277"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="278"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="279"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="277"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="278"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="279"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="286"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="287"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="288"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="286"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="287"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="288"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="295"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="296"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="297"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="295"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="296"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="297"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -702,57 +701,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="298"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="299"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="300"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="298"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="299"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="300"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="307"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="308"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="309"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="307"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="308"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="309"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="316"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="317"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="318"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="316"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="317"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="318"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="301"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="302"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="303"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="301"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="302"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="303"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="310"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="311"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="312"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="310"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="311"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="312"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="319"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="320"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="321"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="319"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="320"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="321"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="304"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="305"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="306"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="304"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="305"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="306"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="313"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="314"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="315"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="313"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="314"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="315"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="322"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="323"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="324"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="322"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="323"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="324"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -766,57 +765,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="325"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="326"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="327"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="325"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="326"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="327"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="334"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="335"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="336"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="334"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="335"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="336"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="343"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="344"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="345"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="343"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="344"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="345"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="328"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="329"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="330"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="328"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="329"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="330"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="337"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="338"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="339"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="337"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="338"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="339"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="346"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="347"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="348"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="346"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="347"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="348"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="331"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="332"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="333"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="331"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="332"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="333"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="340"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="341"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="342"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="340"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="341"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="342"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="349"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="350"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="351"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="349"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="350"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="351"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -825,57 +824,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="352"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="353"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="354"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="352"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="353"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="354"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="361"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="362"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="363"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="361"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="362"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="363"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="370"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="371"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="372"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="370"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="371"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="372"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="355"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="356"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="357"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="355"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="356"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="357"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="364"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="365"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="366"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="364"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="365"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="366"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="373"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="374"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="375"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="373"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="374"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="375"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="358"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="359"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="360"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="358"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="359"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="360"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="367"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="368"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="369"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="367"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="368"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="369"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="376"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="377"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="378"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="376"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="377"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="378"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -884,57 +883,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="379"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="380"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="381"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="379"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="380"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="381"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="388"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="389"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="390"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="388"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="389"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="390"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="397"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="398"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="399"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="397"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="398"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="399"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="382"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="383"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="384"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="382"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="383"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="384"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="391"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="392"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="393"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="391"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="392"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="393"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="400"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="401"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="402"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="400"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="401"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="402"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="385"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="386"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="387"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="385"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="386"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="387"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="394"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="395"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="396"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="394"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="395"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="396"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="403"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="404"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="405"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="403"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="404"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="405"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -948,57 +947,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="406"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="407"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="408"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="406"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="407"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="408"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="415"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="416"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="417"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="415"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="416"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="417"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="424"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="425"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="426"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="424"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="425"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="426"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="409"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="410"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="411"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="409"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="410"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="411"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="418"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="419"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="420"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="418"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="419"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="420"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="427"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="428"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="429"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="427"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="428"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="429"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="412"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="413"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="414"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="412"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="413"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="414"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="421"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="422"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="423"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="421"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="422"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="423"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="430"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="431"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="432"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="430"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="431"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="432"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -1007,57 +1006,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="433"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="434"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="435"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="433"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="434"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="435"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="442"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="443"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="444"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="442"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="443"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="444"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="451"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="452"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="453"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="451"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="452"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="453"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="436"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="437"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="438"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="436"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="437"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="438"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="445"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="446"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="447"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="445"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="446"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="447"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="454"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="455"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="456"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="454"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="455"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="456"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="439"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="440"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="441"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="439"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="440"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="441"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="448"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="449"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="450"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="448"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="449"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="450"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="457"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="458"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="459"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="457"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="458"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="459"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -1066,57 +1065,57 @@
               <td class="col big1">
                 <table id="smallBox1">
                   <tr class="row small1">
-                    <td class="col small1" id="460"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="461"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="462"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="460"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="461"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="462"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="469"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="470"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="471"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="469"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="470"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="471"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="478"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="479"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="480"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="478"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="479"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="480"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big2">
                 <table id="smallBox2">
                   <tr class="row small1">
-                    <td class="col small1" id="463"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="464"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="465"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="463"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="464"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="465"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="472"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="473"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="474"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="472"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="473"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="474"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="481"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="482"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="483"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="481"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="482"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="483"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
               <td class="col big3">
                 <table id="smallBox3">
                   <tr class="row small1">
-                    <td class="col small1" id="466"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="467"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="468"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="466"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="467"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="468"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small2">
-                    <td class="col small1" id="475"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="476"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="477"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="475"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="476"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="477"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                   <tr class="row small3">
-                    <td class="col small1" id="484"><input type="text" maxlength="1"></td>
-                    <td class="col small2" id="485"><input type="text" maxlength="1"></td>
-                    <td class="col small3" id="486"><input type="text" maxlength="1"></td>
+                    <td class="col small1" id="484"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small2" id="485"><input type="text"  id="c" maxlength="1"></td>
+                    <td class="col small3" id="486"><input type="text"  id="c" maxlength="1"></td>
                   </tr>
                 </table>
               </td>
@@ -1128,14 +1127,11 @@
 
     <div class="buttons" style="position: relative" >
         <p><a class="btn btn-lg btn-success" id="popSud" style="position: relative; top: -100px; left: 250px" href="#">Pop a Sud <span class="glyphicon glyphicon-ok"></span></a></p>
+        <p class="scorecard animated bounceInRight"><a class="btn btn-lrg btn-success" href="#" id="dogwood2">Submit</a></li>
         <p id="chevron" style="float: left" href="#"><span class="glyphicon glyphicon-chevron-left"></span></p>
         <p id="chevron" style="float: right"s href="#"><span class="glyphicon glyphicon-chevron-right"></span></p>
     </div>
   </div>
-
-
-
-
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>

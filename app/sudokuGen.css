@@ -102,14 +102,29 @@ ul {
   outline:none !important;
   background-color: rgba(255, 255, 255, .99);
 }
-#dogwood {
+#dogwood1 {
   color: cyan;
    -webkit-text-fill-color: yellow; /* Will override color (regardless of order) */
    -webkit-text-stroke-width: 1.5px;
    -webkit-text-stroke-color:magenta !important;
-   font-size: 33px;
+   font-size: 24px;
+   position: fixed;
+   top: -20px;
+   right: 150px;
+ }
 
+#dogwood2 {
+  color: cyan;
+   -webkit-text-fill-color: yellow; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1.5px;
+   -webkit-text-stroke-color:magenta !important;
+   font-size: 25px;
+   position: fixed;
+   top: -20px;
+   right: 0px;
 }
+
+
 #chevron {
   position: relative;
   bottom: 450px;
