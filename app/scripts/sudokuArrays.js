@@ -62,7 +62,7 @@ var boss = ['5','7','1','6','2','9','3','4','8',
             '9','3','5','1','6','7','8','2','4',
             '1','2','4','9','8','3','6','5','7'];
 
-
+//comp short for comparison array, used to store sudoku input and randomly assigned values to evaluate for faults.
 
 var sudOneComp = [null,null,null,null,null,null,null,null,null,
                   null,null,null,null,null,null,null,null,null,
@@ -294,6 +294,7 @@ $('input').each(function(){
   holdingArray.push(this.value);
 });
 }
+
 function addToMaster() {
   for (var i = 0; i < masterArray.length; i++) {
     if (masterArray[i] === null) {
@@ -302,9 +303,152 @@ function addToMaster() {
     }
   }
 }
+
+function fillCompArrays() {
+  for (var i = 0; i < masterArray.length; i++) {
+    if (i < 81) {
+      sudOneComp.splice(i, 1, masterArray[i]);
+    } else if (i < 162) {
+      sudTwoComp.splice(i-81, 1, masterArray[i]);
+    } else if (i < 243) {
+      sudThreeComp.splice(i-162, 1, masterArray[i]);
+    } else if (i < 324) {
+      sudFourComp.splice(i-243, 1, masterArray[i]);
+    } else if (i < 405) {
+      sudFiveComp.splice(i-324, 1, masterArray[i]);
+    } else {
+      sudSixComp.splice(i-405, 1, masterArray[i]);
+    }
+  }
+}
+
+var boxes = [];
+var resultBoxes;
+var rows = [];
+var resultRows;
+var columns = [];
+var resultColumns;
+var nine = ['1','2','3','4','5','6','7','8','9'];
+var resultSudoku;
+var resultSudokuyo;
+
+function checkColumns(compName) {
+    for (var k = 0; k < 9; k++) {
+        for (var i = k; i < 81; i=i+9) {
+           columns.push((compName[i]));
+        }
+        for (var j = 0; j < 9; j++) {
+            if (nine.indexOf(columns[j]) !== -1) {
+                nine.splice(nine.indexOf(columns[j]), 1);
+            }
+       }
+       if (nine.length !== 0) {
+            resultColumns = 'fail';
+            return resultColumns;
+       }
+       nine = ['1','2','3','4','5','6','7','8','9'];
+       columns = [];
+    }
+}
+
+function checkRows(compName) {
+    for (var i = 0; i < 81; i=i+9) {
+        for (var k = i; k < i+9; k++) {
+           rows.push((compName[k]));
+        }
+        for (var j = 0; j < 9; j++) {
+            if (nine.indexOf(rows[j]) !== -1) {
+                nine.splice(nine.indexOf(rows[j]), 1);
+            }
+       }
+       if (nine.length !== 0) {
+            resultRows = 'fail';
+            return resultRows;
+       }
+       nine = ['1','2','3','4','5','6','7','8','9'];
+       rows = [];
+    }
+}
+
+function checkBoxes(compName) {
+    for (var k = 0; k < 81; k = k + 27) {
+        for (var i = k; i < k + 9; i=i+3) {
+            boxes.push(compName[i]);boxes.push(compName[i+1]);boxes.push(compName[i+2]);boxes.push(compName[i+9]);boxes.push(compName[i+10]);boxes.push(compName[i+11]);boxes.push(compName[i+18]);boxes.push(compName[i+19]);boxes.push(compName[i+20]);
+            for (var j = 0; j < 9; j++) {
+                if (nine.indexOf(boxes[j]) !== -1) {
+                nine.splice(nine.indexOf(boxes[j]), 1);
+                }
+            }
+            if (nine.length !== 0) {
+                resultBoxes = 'fail';
+                return resultBoxes;
+            }
+            nine = ['1','2','3','4','5','6','7','8','9'];
+            boxes = [];
+        }
+    }
+}
+
+function checkSudoku(compName) {
+  checkColumns(compName);
+  checkRows(compName);
+  checkBoxes(compName);
+  if (resultBoxes === 'fail') {
+    resultSudoku = 'fail';
+    return resultSudoku;
+  } else if (resultRows === 'fail') {
+    resultSudoku = 'fail';
+    return resultSudoku;
+  } else if (resultColumns === 'fail') {
+    resultSudoku = 'fail';
+    return resultSudoku;
+  } else {
+    resultSudoku = 'success';
+    return resultSudoku;
+  }
+}
+
+function evaluateSudokuyo() {
+  checkSudoku(sudOneComp);
+  if (resultSudoku === 'fail') {
+    resultSudokuyo = 'fail';
+    return resultSudokuyo;
+  } checkSudoku(sudTwoComp);
+  if (resultSudoku === 'fail') {
+    resultSudokuyo = 'fail';
+    return resultSudokuyo;
+  } checkSudoku(sudThreeComp);
+  if (resultSudoku === 'fail') {
+    resultSudokuyo = 'fail';
+    return resultSudokuyo;
+  } checkSudoku(sudFourComp);
+  if (resultSudoku === 'fail') {
+    resultSudokuyo = 'fail';
+    return resultSudokuyo;
+  } checkSudoku(sudFiveComp);
+  if (resultSudoku === 'fail') {
+    resultSudokuyo = 'fail';
+    return resultSudokuyo;
+  } checkSudoku(sudSixComp);
+  if (resultSudoku === 'fail') {
+    resultSudokuyo = 'fail';
+    return resultSudokuyo;
+  } else {
+    if (resultSudokuyo !== 'fail') {
+      resultSudokuyo = 'success';
+      return resultSudokuyo;
+    }
+  }
+}
+
+
 $('#dogwood2').click(function(){
 fillHoldingArray();
 addToMaster();
+fillCompArrays();
+evaluateSudokuyo();
 });
+
+
 
 //////////////////////////////////animate.css hinge for samurai number knock off.
