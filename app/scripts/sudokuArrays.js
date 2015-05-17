@@ -251,6 +251,7 @@ function popSud6(sudName) {
 
 $('#popSud').click(function(){
   $('.difficulty').addClass('animated zoomOutUp');
+  //$('#popSud').addClass('animated bounceOutUp');
      popSud(easy);
      popSud2(easyTwo);
      popSud3(med);
@@ -259,35 +260,13 @@ $('#popSud').click(function(){
      popSud6(boss);
 });
 
-// function getValue() {
-//   one = document.getElementById("one").value;
-//   return one;
-// }
-// $('#popSud').click(function() {
-// $('#popSud').addClass('animated bounceOutUp');
-// });
 
 
 
 
-// $('#dogwood2').click(function() {
-//   getValue();
-// })
 $('#dogwood2').click(function() {
  $('#dogwood1').addClass('animated rubberBand');
 });
-
-// $('.difficulty').click(function(){
-
-// })
-// $('#popSud').click(function(){
-//   $('.difficulty').addClass('animated flip')
-// })
-
-
-
-
-
 
 function fillHoldingArray(){
 $('input').each(function(){
@@ -441,14 +420,32 @@ function evaluateSudokuyo() {
   }
 }
 
-
 $('#dogwood2').click(function(){
 fillHoldingArray();
 addToMaster();
 fillCompArrays();
 evaluateSudokuyo();
+fail();
+success();
 });
 
+function fail() {
+  if (resultSudokuyo === 'fail') {
+    $('.firstNo').toggleClass('firstNoBig');
+    $('.tryAgain').toggleClass('tryAgainBig');
+  }
+}
+
+function success() {
+  if (resultSudokuyo === 'success') {
+    $('.verdict').toggleClass('verdictVisible')
+  }
+}
 
 
+// $('#dogwood2').click(function() {
+//         $('.firstNo').toggleClass('firstNoBig');
+//         $('.tryAgain').toggleClass('tryAgainBig');
+//       });
+//     });
 //////////////////////////////////animate.css hinge for samurai number knock off.

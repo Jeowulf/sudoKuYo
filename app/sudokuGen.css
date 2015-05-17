@@ -13,30 +13,21 @@ h3 {
 }
 table {
   margin:1em auto;
+  font-size: 22px;
 }
 td.col {
   border: 1px solid magenta;
+  font-size: 22px;
 }
 tr.row {
   border: 1px solid magenta;
+  font-size: 22px;
 }
 td {
   height:30px !important;
   width:30px !important;
-  border: 1px solid magenta;
   text-align:center;
-}
-td:first-child {
-  border-left: 1px solid magenta;
-}
-td:nth-child(3n) {
-  border-right: 1px solid magenta ;
-}
-tr:first-child {
-  border-top: 1px solid magenta;
-}
-tr:nth-child(3n) td {
-  border-bottom: 1px solid magenta;
+  font-size: 22px;
 }
 
 table {
@@ -49,6 +40,7 @@ table {
     padding: 0;
     margin: 0 auto;
     border: 1px solid magenta;
+    font-size: 22px;
 }
 
 table, td, th {
@@ -86,9 +78,7 @@ input[type=text] {
   top: 150px;
   z-index: 501;
 }
-.table tbody tr:nth-child(1) td:nth-child(5) {
-   /* Styles goes here */
-}
+
 ul {
   list-style: none;
 }
@@ -178,3 +168,124 @@ ul {
   outline: magenta;
   background-color: cyan;
 }
+h1 {
+   -webkit-text-fill-color: yellow; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color:navy !important;
+   font-size: 30px;
+   position: relative;
+   text-align: center;
+   font-family: Last Ninja;
+}
+
+h2 {
+   -webkit-text-fill-color: magenta; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color:navy !important;
+   font-size: 20px;
+   position: relative;
+   text-align: center;
+}
+
+h4 {
+  -webkit-text-fill-color: yellow; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color:magenta !important;
+   font-size: 35px;
+   position: relative;
+   text-align: center;
+}
+
+.verdict {
+  position: relative;
+  border: 10px dotted;
+  border-radius: 10px;
+  border-color: magenta;
+  left: 9000px;
+  width: 350px;
+  height: 450px;
+  z-index: 5000;
+  background-image: url(styles/cherryBlossom.jpg);
+  background-size: cover;
+  bottom: 100px;
+}
+.verdictVisible {
+  position: relative;
+  border: 10px dotted;
+  border-radius: 10px;
+  border-color: magenta;
+  left: 175px;
+  width: 350px;
+  height: 450px;
+  z-index: 5000;
+  background-image: url(styles/cherryBlossom.jpg);
+  background-size: cover;
+  bottom: 100px;
+}
+
+
+/*@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 2500px;}
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 2500px;}
+}
+
+#firstNo{
+  position: relative;
+    -webkit-animation: mymove 2s;
+    -webkit-animation-timing-function: linear;
+    animation: mymove 2s infinite;
+    animation-timing-function: linear;
+}*/
+.fail {
+  position: relative;
+  bottom: 450px;
+  z-index: 1000;
+  left: 30px;
+}
+
+.firstNo {
+  font-family: Last Ninja;
+  font-size: 0px;
+  -webkit-text-fill-color: red; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 2.5px;
+   -webkit-text-stroke-color:magenta !important;
+  -webkit-transition: width 2s ease, height 2s ease;
+  -moz-transition: width 2s ease, height 2s ease;
+  -o-transition: width 2s ease, height 2s ease;
+  transition: width 2s ease, height 2s ease;
+}
+.firstNoBig {
+  font-family: Last Ninja;
+  font-size: 90px;
+  color: cyan;
+}
+
+h5 {
+  font-family: Last Ninja;
+  font-size: 45px;
+  position: relative;
+  text-align: center;
+}
+.tryAgain {
+  font-size: 0px !important;
+  text-align: center !important;
+  font-family: Last Ninja !important;
+  -webkit-text-fill-color: red !important; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 2.5px !important;
+   -webkit-text-stroke-color:magenta !important;
+}
+.tryAgainBig {
+  font-size: 50px !important;
+  text-align: center;
+  font-family: Last Ninja !important;
+  -webkit-text-fill-color: red !important; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 2.5px !important;
+   -webkit-text-stroke-color:magenta !important;
+   position: relative;
+   left: 100px;
+}
+
